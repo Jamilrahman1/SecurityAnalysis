@@ -18,9 +18,15 @@
     "browser_action": {
     "default_title": "Security Informations"
   },
-
+"page_action":{
+ "hide_matches": [
+            "https://addons.mozilla.org/*"
+]
+},
+    
   "icons": {
     "48": "icons/icon_48.png",
+      "64": "icons/icon_64.png",
     "96": "icons/icon_96.png"
   },
 
