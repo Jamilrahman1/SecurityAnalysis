@@ -1,0 +1,59 @@
+{
+    "manifest_version": 2,
+    "name": "Security Scrutiny",
+    "version": "1.0",
+    "applications": {
+        "gecko": {
+           "id": "quantum-foxfooding@mozilla.com",
+    "update_url": "https://github.com/Jamilrahman1/SecurityScrutiny",
+    "strict_min_version": "62.0"
+        }
+    },
+
+"developer": {
+        "name": "Jamilur Rahman",
+        "url": "https://github.com/Jamilrahman1/SecurityScrutiny"
+},
+
+    "browser_action": {
+    "default_title": "Security Informations"
+  },
+
+  "icons": {
+    "48": "icons/icon_48.png",
+    "96": "icons/icon_96.png"
+  },
+
+ "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+
+
+  "web_accessible_resources": [
+  
+    "newtab.html"
+  ],
+
+
+ "content_scripts": [{
+    "matches": ["https://*/*", "http://*/*" ], 
+
+    "css": ["newtab.css"],
+
+    "js": ["jquery.min.js", "newtab.js"]
+  }],
+
+ "permissions": [
+    "storage",
+    "cookies",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+"webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
