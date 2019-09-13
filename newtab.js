@@ -26,4 +26,3 @@ items.forEach((item, index) => {
 });
 
 
-
