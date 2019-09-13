@@ -1,11 +1,10 @@
 {
     "manifest_version": 2,
     "name": "Security Scrutiny",
-    "version": "1.0",
+    "version": "1.2",
+    "homepage_url": "https://github.com/Jamilrahman1/SecurityScrutiny",
     "applications": {
         "gecko": {
-           "id": "quantum-foxfooding@mozilla.com",
-    "update_url": "https://github.com/Jamilrahman1/SecurityScrutiny",
     "strict_min_version": "62.0"
         }
     },
@@ -23,10 +22,11 @@
             "https://addons.mozilla.org/*"
 ]
 },
-    
+
   "icons": {
     "48": "icons/icon_48.png",
-      "64": "icons/icon_64.png",
+"64": "icons/icon_64.png",
+
     "96": "icons/icon_96.png"
   },
 
@@ -54,7 +54,6 @@
 
  "permissions": [
     "storage",
-    "cookies",
     "tabs",
     "webNavigation",
     "webRequest",
